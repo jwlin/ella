@@ -40,7 +40,7 @@ ella.android.buildtools.dir=/home/castman/Android/Sdk/build-tools/25.0.0/
 
 # android jar to compile (ella runtime library) against
 # in default setting, the path is estimated
-ella.android.jar=/home/castman/Android/Sdk/platforms/android-19/android.jar
+ella.android.jar=/home/castman/Android/Sdk/platforms/android-23/android.jar
 
 # settings used by jarsigner to sign the instrumented apk
 ella.jarsigner.keystore=.android/debug.keystore

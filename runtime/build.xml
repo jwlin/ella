@@ -24,7 +24,7 @@
   <target name="compile" depends="init"
         description="compile the source " >
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" destdir="${build}" includeantruntime="false" debug="true" target="1.7">
+    <javac srcdir="${src}" destdir="${build}" includeantruntime="false" debug="true" target="1.8">
 	  <classpath>
 		<pathelement location="${ella.android.jar}"/>
 		<!--pathelement location="libs/httpcore-4.3.3.jar"/-->
