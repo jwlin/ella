@@ -50,7 +50,8 @@ Before executing any instrumented app, ella server must be up and running. To st
 ```
 ella.sh s
 ```
-Whenever needed, the ella server can be shutdown by executing the following command
+Whenever needed, the ella server can be shutdown by executing the following command (remember to kill the process because it still shows on `ps -ef`)
+
 ```
 ella.sh k
 ```
@@ -65,3 +66,7 @@ ella.sh e
 ## Coverage data
 
 The coverage data are stored inside a subdirectory of `<ella-home>/ella-out` directory, where `<ella-home>` represents the installation directory of ella. The name of the subdirectory is derived from `<path-to-apk>`. Currently, coverage data are stored in files `coverage.dat` and `covids`. `covids` contain the list of method signatures; index of a method is its identifier. `coverage.dat` contains the list of method identifiers that were executed.
+
+```
+python tools/tool_coverage.py _home_castman_apks_Jamendo.apk method/activity
+```

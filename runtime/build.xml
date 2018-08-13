@@ -18,7 +18,7 @@
     <taskdef name="GuessDefaultSettings"
 			 classname="GuessDefaultSettingsTask"
 			 classpath="."/>
-	<GuessDefaultSettings/>
+	<!--<GuessDefaultSettings/>-->
   </target>
 
   <target name="compile" depends="init"
